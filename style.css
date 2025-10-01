@@ -1,0 +1,119 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background: #2c6e49;
+  color: white;
+  padding: 20px 10px;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+header .logo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header p {
+  margin-top: 5px;
+  font-size: 1.1rem;
+  color: #e0f7e9;
+}
+
+/* About Section */
+.about {
+  padding: 40px 20px;
+  background: #fff;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.about h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #2c6e49;
+}
+
+.about p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #444;
+}
+.services{ padding:56px 0; text-align:center; }
+.services h2{ color:var(--green); margin-bottom:30px; font-size:1.5rem; }
+.features-grid{ display:grid; gap:22px; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); }
+.feature{ background:var(--card); padding:20px; border-radius:10px; box-shadow: 0 6px 18px rgba(0,0,0,0.06); }
+.feature h3{ color:var(--green); margin-bottom:8px; }
+
+/* Testimonials */
+.testimonials{ padding:56px 0; background:#f4faf4; text-align:center; }
+.testimonials h2{ color:var(--green); margin-bottom:24px; }
+.testimonials-grid{ display:grid; gap:20px; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); padding:0 10px; }
+blockquote{ background:#fff; padding:18px 20px; border-radius:8px; box-shadow: 0 8px 24px rgba(0,0,0,0.04); font-style:italic; }
+blockquote footer{ margin-top:12px; font-weight:700; color:var(--green); font-style:normal; }
+
+/* Slider */
+.slider {
+  width: 100%;
+  max-width: 800px;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  animation: slide 12s infinite;
+}
+
+.slides img {
+  width: 100%;
+  flex: 1 0 100%;
+}
+
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  33%  { transform: translateX(-100%); }
+  66%  { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+
+/* Footer */
+footer {
+  background: #2c6e49;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}

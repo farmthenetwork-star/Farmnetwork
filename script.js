@@ -1,12 +1,25 @@
-// Simple JS for slider interactivity (optional if CSS auto-slide is enough)
-document.addEventListener("DOMContentLoaded", () => {
-  const slides = document.querySelector(".slides");
-  const totalSlides = slides.children.length;
-  let index = 0;
+// Hero Slider (Autoplay)
+let slideIndex = 0;
+showSlides();
 
-  setInterval(() => {
-    index = (index + 1) % totalSlides;
-    slides.style.transform = `translateX(-${index * 100}%)`;
-    slides.style.transition = "transform 1s ease";
-  }, 4000); // change every 4 seconds
-});
+function showSlides() {
+  const slides = document.querySelectorAll(".slide");
+  const dots = document.querySelectorAll(".dot");
+
+  slides.forEach((slide) => (slide.style.display = "none"));
+  slideIndex++;
+  if (slideIndex > slides.length) { slideIndex = 1; }
+
+  slides[slideIndex - 1].style.display = "block";
+
+  dots.forEach((dot) => dot.classList.remove("active"));
+  dots[slideIndex - 1].classList.add("active");
+
+  // Auto slide every 5 seconds
+  setTimeout(showSlides, 5000);
+}
+
+function currentSlide(n) {
+  slideIndex = n - 1;
+  showSlides();
+}

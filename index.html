@@ -1,21 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Farm Network - TikTok Agency</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
   <!-- Header -->
   <header>
     <div class="logo">
-      <!-- Replace with your logo path -->
-      <img src="images/logo.png" alt="Farm Network Logo">
+      <img src="images/logo.png" alt="Farm Network Logo" />
       <h1>FARM NETWORK</h1>
     </div>
     <p>Your Growth Partner on TikTok</p>
   </header>
+
+  <!-- Hero Slider -->
+  <section class="hero-slider">
+    <div class="slide fade">
+      <img src="images/slide1.jpg" alt="Creators Collaboration" />
+      <div class="caption">
+        <h2>Empowering TikTok Creators</h2>
+        <p>Grow your influence with our creator network.</p>
+      </div>
+    </div>
+    <div class="slide fade">
+      <img src="images/slide2.jpg" alt="Brand Partnerships" />
+      <div class="caption">
+        <h2>Partner with Leading Brands</h2>
+        <p>We connect talent with top global campaigns.</p>
+      </div>
+    </div>
+    <div class="slide fade">
+      <img src="images/slide3.jpg" alt="Creator Growth" />
+      <div class="caption">
+        <h2>Accelerate Your Growth</h2>
+        <p>Monetize your creativity and reach new audiences.</p>
+      </div>
+    </div>
+
+    <!-- Dots -->
+    <div class="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </section>
 
   <!-- About Section -->
   <section class="about">
@@ -27,31 +60,38 @@
     </p>
     <p>
       We specialize in <em>TikTok influencer partnerships, viral content creation, and ad management</em>, 
-      tailoring every strategy to your unique brand goals. With data-driven insights and trend-savvy execution, 
-      we deliver measurable growth while keeping your brand ahead of the curve.
-    </p>
-    <p>
-      Whether you’re looking to <em>launch, scale, or redefine your digital presence</em>, 
-      Farm Network provides the resources of a full-service agency with the care and agility of an in-house team. 
-      Together, we turn ideas into viral moments and audiences into loyal communities.
+      tailoring every strategy to your unique brand goals.
     </p>
   </section>
-<!-- Services -->
+
+  <!-- Services -->
   <section id="services" class="services">
     <div class="container">
       <h2>Our Services</h2>
       <div class="features-grid">
         <div class="feature">
           <h3>Influencer Campaigns</h3>
-          <p>We pair your brand with creators who spark authentic engagement and results.</p>
+          <p>We pair your brand with creators who spark authentic engagement and drive measurable results.</p>
         </div>
         <div class="feature">
           <h3>Content Strategy & Creation</h3>
-          <p>Short-form videos, trend-led creative, and scalable content plans that work.</p>
+          <p>From scriptwriting to video editing — we craft viral TikTok content that fits your brand story.</p>
         </div>
         <div class="feature">
           <h3>TikTok Ads & Growth</h3>
-          <p>Ad setup, optimization, and data-driven scaling to exceed your KPIs.</p>
+          <p>Full-funnel TikTok Ads management, audience targeting, and campaign scaling to maximize ROI.</p>
+        </div>
+        <div class="feature">
+          <h3>Creator Training & Onboarding</h3>
+          <p>We help creators master the TikTok algorithm, trends, and monetization techniques to grow faster.</p>
+        </div>
+        <div class="feature">
+          <h3>Brand Partnerships & Sponsorships</h3>
+          <p>We connect top creators with global brands to deliver authentic, performance-based collaborations.</p>
+        </div>
+        <div class="feature">
+          <h3>Analytics & Performance Reports</h3>
+          <p>Track engagement, conversions, and audience growth with clear data insights and monthly reports.</p>
         </div>
       </div>
     </div>
@@ -63,33 +103,24 @@
       <h2>What Our Clients Say</h2>
       <div class="testimonials-grid">
         <blockquote>
-          “Farm Network helped us reach 1M+ views in just two weeks.”  
+          “Farm Network helped us reach 1M+ views in just two weeks.”
           <footer>— Brand X</footer>
         </blockquote>
         <blockquote>
-          “Our TikTok account grew from 5K to 50K in three months.”  
+          “Our TikTok account grew from 5K to 50K in three months.”
           <footer>— Creator Y</footer>
         </blockquote>
       </div>
-    </div>
-  </section>
-  <!-- Image Slider -->
-  <section class="slider">
-    <div class="slides">
-      <img src="images/slide1.jpg" alt="Campaign Example 1">
-      <img src="images/slide2.jpg" alt="Campaign Example 2">
-      <img src="images/slide3.jpg" alt="Campaign Example 3">
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 FARM NETWORK | All Rights Reserved</p>
-    <p>📍 farmthenetwork@gmail.com</p>
+    <p>📍 1055 Boston Post Rd, West Haven, CT, USA</p>
+    <p>📞 +1 203 390 1337</p>
   </footer>
 
-  <!-- JS Link -->
   <script src="script.js"></script>
 </body>
 </html>
-
